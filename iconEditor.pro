@@ -15,14 +15,14 @@ DEFINES += QT_DEPRECATED_WARNINGS
 # You can also select to disable deprecated APIs only up to a certain version of Qt.
 #DEFINES += QT_DISABLE_DEPRECATED_BEFORE=0x060000    # disables all the APIs deprecated before Qt 6.0.0
 
-SOURCES += \
-    app/application.cpp \
-    main.cpp \
-    iconeditor.cpp
+SOURCES +=                     \
+    app/application.cpp        \
+    main.cpp                   \
+    icon_editor/iconeditor.cpp
 
-HEADERS += \
-    app/application.h \
-    iconeditor.h
+HEADERS +=                     \
+    app/application.h          \
+    icon_editor/iconeditor.h
 
 # Default rules for deployment.
 qnx: target.path = /tmp/$${TARGET}/bin

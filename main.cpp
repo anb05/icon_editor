@@ -1,11 +1,11 @@
-#include "iconeditor.h"
+#include "icon_editor/iconeditor.h"
 
-#include <QApplication>
+#include <./app/application.h>
 
 int main(int argc, char *argv[])
 {
-	QApplication a(argc, argv);
-	IconEditor w;
+	i_e::Application a(argc, argv);
+	i_e::IconEditor w;
 	w.show();
 	return a.exec();
 }
