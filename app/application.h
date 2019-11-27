@@ -7,6 +7,8 @@ namespace i_e {
 
 class Application : public QApplication
 {
+	Q_OBJECT
+
 public:
 	explicit Application(int& argc, char** argv);
 	~Application() override;
@@ -16,6 +18,9 @@ public:
 
 	Application& operator= (const Application& ) = delete ;
 	Application& operator= (Application&& )      = delete ;
+
+private:
+
 };
 
 } // namespace i_e
